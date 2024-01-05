@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="App Demo Project Automation Run">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="Username" value="akhiljda@gmail.com"></parameter>
+    <parameter name="Password" value="Password"></parameter>
+    <parameter name="ItemName" value="Nike air zoom pegasus 35"></parameter>
+    <test name="Chrome Browser">
+        <groups>
+            <run>
+                <include name="sanity"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="LoginTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
